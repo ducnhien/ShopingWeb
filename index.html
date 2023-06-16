@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+
+    <!-- Favicon link -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/image/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- font-awesome cnd link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- swiper css file cnd link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header>
+      <div class="header-1">
+        <a href="#" class="logo">
+          <i class="fas fa-shopping-bag"></i> shopping
+        </a>
+
+        <div class="form-container">
+          <form action="">
+            <input type="search" placeholder="search products" id="search" />
+            <label for="search" class="fas fa-search"></label>
+          </form>
+        </div>
+      </div>
+
+      <div class="header-2">
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+          <ul>
+            <li><a class="active" href="#home">home</a></li>
+            <li><a href="#arrival">arrival</a></li>
+            <li><a href="#featured">featured</a></li>
+            <li><a href="#gallery">gallery</a></li>
+            <li><a href="#deal">deal</a></li>
+          </ul>
+        </nav>
+
+        <div class="icons">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-user" id="login-btn"></a>
+        </div>
+      </div>
+
+      <!-- Cart content -->
+      <div class="cart-container">
+        <h3>cart</h3>
+        <span class="close-btn">&times;</span>
+        <ul>
+          <li>
+            <img src="image/g-img1.png" alt="Product image" />
+            <p>Iphone X</p>
+            <span>$120</span>
+          </li>
+          <li>
+            <img src="image/g-img3.png" alt="Product image" />
+            <p>Laptop ASUS</p>
+            <span>$2000</span>
+          </li>
+          <li>
+            <img src="image/g-img4.png" alt="Product image" />
+            <p>Nike</p>
+            <span>$100</span>
+          </li>
+          <li>
+            <img src="image/g-img10.png" alt="Product image" />
+            <p>Samsung Note 10</p>
+            <span>$1500</span>
+          </li>
+        </ul>
+        <div class="btn">buy now</div>
+      </div>
+    </header>
+
+    <!-- Login form -->
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="">
+        <h3>login</h3>
+        <input type="text" class="box" placeholder="enter your username" />
+        <input type="password" class="box" placeholder="enter your password" />
+        <input type="submit" value="login now" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>
+          don't have and account? <a href="registration.html">register now</a>
+        </p>
+      </form>
+    </div>
+
+    <!-- Home section -->
+    <section class="home" id="home">
+      <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+          <div class="item swiper-slide">
+            <img src="image/home-img00.jpg" alt="" />
+            <div class="content">
+              <h3>heavy discounts</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus, ipsam?
+              </p>
+              <a href="#"><button class="btn">discover</button></a>
+            </div>
+          </div>
+
+          <div class="item swiper-slide">
+            <img src="image/home-img2.jpg" alt="" />
+            <div class="content">
+              <h3>latest gadgets</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus, ipsam?
+              </p>
+              <a href="#"><button class="btn">discover</button></a>
+            </div>
+          </div>
+
+          <div class="item swiper-slide">
+            <img src="image/home-img3.jpg" alt="" />
+            <div class="content">
+              <h3>trending shoes</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus, ipsam?
+              </p>
+              <a href="#"><button class="btn">discover</button></a>
+            </div>
+          </div>
+
+          <div class="item swiper-slide">
+            <img src="image/home-img4.jpg" alt="" />
+            <div class="content">
+              <h3>fresh groeries</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Possimus, ipsam?
+              </p>
+              <a href="#"><button class="btn">discover</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Arrival section -->
+    <section class="arrival" id="arrival">
+      <h1 class="heading"><span>new arrival</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="image">
+            <img src="image/arr-img1.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>smart tv</h3>
+            <div class="subInfo">
+              <strong class="price"> $1000/- <span>$1500/-</span> </strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i: 1" class="fas fa-heart"></a>
+            <a href="#" style="--i: 2" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i: 3" class="fas fa-search"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="image/arr-img2.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>game console</h3>
+            <div class="subInfo">
+              <strong class="price"> $1000/- <span>$1500/-</span> </strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i: 1" class="fas fa-heart"></a>
+            <a href="#" style="--i: 2" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i: 3" class="fas fa-search"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="image/arr-img3.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>latest shoes</h3>
+            <div class="subInfo">
+              <strong class="price"> $1000/- <span>$1500/-</span> </strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i: 1" class="fas fa-heart"></a>
+            <a href="#" style="--i: 2" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i: 3" class="fas fa-search"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="image/arr-img4.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>smartphones</h3>
+            <div class="subInfo">
+              <strong class="price"> $1000/- <span>$1500/-</span> </strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i: 1" class="fas fa-heart"></a>
+            <a href="#" style="--i: 2" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i: 3" class="fas fa-search"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="image/arr-img5.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>branded t-shirts</h3>
+            <div class="subInfo">
+              <strong class="price"> $1000/- <span>$1500/-</span> </strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i: 1" class="fas fa-heart"></a>
+            <a href="#" style="--i: 2" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i: 3" class="fas fa-search"></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="image">
+            <img src="image/arr-img6.png" alt="" />
+          </div>
+          <div class="info">
+            <h3>amazing speakers</h3>
+            <div class="subInfo">
+              <strong class="price"> $1000/- <span>$1500/-</span> </strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+          <div class="overlay">
+            <a href="#" style="--i: 1" class="fas fa-heart"></a>
+            <a href="#" style="--i: 2" class="fas fa-shopping-cart"></a>
+            <a href="#" style="--i: 3" class="fas fa-search"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature -->
+    <section class="feature" id="featured">
+      <h1 class="heading"><span> feature products </span></h1>
+
+      <div class="row">
+        <div class="image-container">
+          <div class="big-image">
+            <img src="image/watch1.png" alt="" />
+          </div>
+
+          <div class="small-image">
+            <img class="image-active" src="image/watch1.png" alt="" />
+            <img src="image/watch2.png" alt="" />
+            <img src="image/watch3.png" alt="" />
+            <img src="image/watch4.png" alt="" />
+          </div>
+        </div>
+
+        <div class="content">
+          <h3>smart watches</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <span>(500+) reviews</span>
+          </div>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi,
+            dolore.
+          </p>
+          <strong class="price">$1000 <span>$1500</span> </strong>
+          <a href="#"><button class="btn">buy now</button></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery section -->
+    <section class="gallery" id="gallery">
+      <h1 class="heading"><span> product gallery </span></h1>
+
+      <ul class="controls">
+        <li class="btn button-active" data-filter="all">all</li>
+        <li class="btn" data-filter="phone">smart phone</li>
+        <li class="btn" data-filter="laptop">laptop</li>
+        <li class="btn" data-filter="headphone">headphone</li>
+        <li class="btn" data-filter="shoes">shoes</li>
+      </ul>
+
+      <div class="image-container">
+        <div class="box phone">
+          <div class="image">
+            <img src="image/g-img1.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>iphone XSmax</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box phone">
+          <div class="image">
+            <img src="image/g-img2.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>iphone x</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box laptop">
+          <div class="image">
+            <img src="image/g-img3.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>Asus Vivobook</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box shoes">
+          <div class="image">
+            <img src="image/g-img4.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>sport shoes</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box laptop">
+          <div class="image">
+            <img src="image/g-img5.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>Asus Vivobook</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box headphone">
+          <div class="image">
+            <img src="image/g-img6.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>beats electronis</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box shoes">
+          <div class="image">
+            <img src="image/g-img7.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>nike jordan</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box headphone">
+          <div class="image">
+            <img src="image/g-img8.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>headphone gaming</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box headphone">
+          <div class="image">
+            <img src="image/g-img9.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>headphone bluetooth</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box phone">
+          <div class="image">
+            <img src="image/g-img10.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>Samsung galaxy s23 utra</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box laptop">
+          <div class="image">
+            <img src="image/g-img11.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>levono legion 5</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="box shoes">
+          <div class="image">
+            <img src="image/g-img12.png" alt="" class="product-image" />
+          </div>
+          <div class="info">
+            <h3>climb moutain shoes</h3>
+            <div class="subInfo">
+              <strong class="price product-price">$1000</strong>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
+              </div>
+              <button class="view-product-button">View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal content -->
+      <div class="product-info">
+        <div class="product-info-container">
+          <div class="product-info-image-container">
+            <img class="product-info-image" src="" />
+          </div>
+          <div class="product-info-details-container">
+            <h2 class="product-info-name"></h2>
+            <div class="product-info-price"></div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem, possimus!
+            </div>
+            <div class="product-info-button-container">
+              <button class="product-info-add-to-cart-button">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <button class="product-info-close-button">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deal section -->
+    <section class="deal" id="deal">
+      <h1 class="heading"><span> best deals </span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="image/deal1.jpg" alt="" />
+          <div class="content">
+            <h3>latest laptop</h3>
+            <p>upto 25% off on first purchase</p>
+            <a href="#"><button class="btn">explore</button></a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="image/deal2.jpg" alt="" />
+          <div class="content">
+            <h3>new headphone</h3>
+            <p>upto 25% off on first purchase</p>
+            <a href="#"><button class="btn">explore</button></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="icons-container">
+        <div class="icons">
+          <i class="fas fa-shipping-fast"></i>
+          <h3>fast delivery</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            ea!
+          </p>
+        </div>
+
+        <div class="icons">
+          <i class="fas fa-user-clock"></i>
+          <h3>24 x 7 support</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            ea!
+          </p>
+        </div>
+
+        <div class="icons">
+          <i class="fas fa-money-check-alt"></i>
+          <h3>easy payments</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            ea!
+          </p>
+        </div>
+
+        <div class="icons">
+          <i class="fas fa-box"></i>
+          <h3>10 days replacements</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+            ea!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter section -->
+    <section class="newsletter">
+      <h1>Contact Info</h1>
+      <p>get in touch for latest discounts and updates</p>
+      <form action="" class="form">
+        <input type="email" placeholder="enter your email..." />
+        <input type="submit" class="btn" value="Click here" />
+      </form>
+    </section>
+
+    <!-- Footer section -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <a href="#" class="logo">
+            <i class="fas fa-shopping-bag"></i> shopping
+          </a>
+          <b
+            ><p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel nam
+              quis dignissimos fuga ex sapiente pariatur obcaecati quam
+              laboriosam iusto?
+            </p></b
+          >
+        </div>
+
+        <div class="box">
+          <h3>Table of contents</h3>
+          <b
+            ><a href="#home">home</a>
+            <a href="#arrival">arrival</a>
+            <a href="#featured">featured</a>
+            <a href="#gallery">gallery</a>
+            <a href="#deal">deal</a></b
+          >
+        </div>
+
+        <div class="box">
+          <h3>contact us</h3>
+          <b
+            ><p>
+              <i class="fas fa-home"></i>
+              Hoa Vang - Da Nang - Viet Nam - 12021
+            </p>
+            <p>
+              <i class="fas fa-phone"></i>
+              +84000000
+            </p>
+            <p>
+              <i class="fas fa-globe"></i>
+              xyz@yoursite.com
+            </p></b
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- jquery cnd link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- swiper js file cnd link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- js link -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
