@@ -1028,8 +1028,7 @@ header .header-2.header-active {
   display: inline-block;
   height: 60px;
   width: 60px;
-  justify-content: center;
-  float: left;
+  /* float: left; */
   margin: 0 5px;
   overflow: hidden;
   background: #fff;
